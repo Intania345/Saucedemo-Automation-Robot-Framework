@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211205 20:01:16.106" rpa="false" schemaversion="2">
+<suite id="s1" name="Continue Shopping Step" source="C:\Users\Asus\Documents\GitHub\Saucedemo-Automation-Robot-Framework\steps\continue_shopping_step.robot">
+<test id="s1-t1" name="I want to continue shopping">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${WebURL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211205 20:01:16.353" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20211205 20:01:16.353" endtime="20211205 20:01:18.826"/>
+</kw>
+<kw name="I want to continue shopping">
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtUsername}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:18.828" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20211205 20:01:18.828" endtime="20211205 20:01:18.934"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${txtPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:18.935" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20211205 20:01:18.934" endtime="20211205 20:01:19.016"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${btnLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:19.017" level="INFO">Clicking element 'login-button'.</msg>
+<status status="PASS" starttime="20211205 20:01:19.016" endtime="20211205 20:01:19.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:20.114" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:19.108" endtime="20211205 20:01:20.114"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:20.362" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-44.png"&gt;&lt;img src="selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:20.115" endtime="20211205 20:01:20.362"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Sauce Labs Backpack</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211205 20:01:20.377" level="INFO">Current page contains text 'Sauce Labs Backpack'.</msg>
+<status status="PASS" starttime="20211205 20:01:20.362" endtime="20211205 20:01:20.378"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//div[@class='inventory_item_name'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:20.378" level="INFO">Clicking element '(//div[@class='inventory_item_name'])[1]'.</msg>
+<status status="PASS" starttime="20211205 20:01:20.378" endtime="20211205 20:01:20.431"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:21.439" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:20.431" endtime="20211205 20:01:21.439"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:21.666" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-45.png"&gt;&lt;img src="selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:21.439" endtime="20211205 20:01:21.666"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=add-to-cart-sauce-labs-backpack</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:21.667" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20211205 20:01:21.667" endtime="20211205 20:01:21.715"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:22.719" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:21.715" endtime="20211205 20:01:22.719"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:22.946" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:22.719" endtime="20211205 20:01:22.946"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=shopping_cart_container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:22.946" level="INFO">Clicking element 'id=shopping_cart_container'.</msg>
+<status status="PASS" starttime="20211205 20:01:22.946" endtime="20211205 20:01:22.990"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:23.995" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:22.990" endtime="20211205 20:01:23.995"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:24.101" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:23.995" endtime="20211205 20:01:24.101"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=continue-shopping</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:24.101" level="INFO">Clicking element 'id=continue-shopping'.</msg>
+<status status="PASS" starttime="20211205 20:01:24.101" endtime="20211205 20:01:24.156"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:25.171" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:24.156" endtime="20211205 20:01:25.171"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:25.171" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<status status="PASS" starttime="20211205 20:01:25.171" endtime="20211205 20:01:25.210"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:26.224" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:25.210" endtime="20211205 20:01:26.225"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:26.478" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-48.png"&gt;&lt;img src="selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:26.226" endtime="20211205 20:01:26.478"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=add-to-cart-sauce-labs-onesie</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:26.478" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-onesie'.</msg>
+<status status="PASS" starttime="20211205 20:01:26.478" endtime="20211205 20:01:26.518"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:27.522" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:26.518" endtime="20211205 20:01:27.522"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:27.769" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:27.522" endtime="20211205 20:01:27.769"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=shopping_cart_container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:27.769" level="INFO">Clicking element 'id=shopping_cart_container'.</msg>
+<status status="PASS" starttime="20211205 20:01:27.769" endtime="20211205 20:01:27.810"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:28.814" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:27.810" endtime="20211205 20:01:28.814"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:28.920" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-50.png"&gt;&lt;img src="selenium-screenshot-50.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:28.815" endtime="20211205 20:01:28.920"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=checkout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:28.921" level="INFO">Clicking element 'id=checkout'.</msg>
+<status status="PASS" starttime="20211205 20:01:28.920" endtime="20211205 20:01:28.968"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:29.972" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:28.968" endtime="20211205 20:01:29.972"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:30.104" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-51.png"&gt;&lt;img src="selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:29.973" endtime="20211205 20:01:30.104"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=first-name</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:30.105" level="INFO">Typing text 'User' into text field 'id=first-name'.</msg>
+<status status="PASS" starttime="20211205 20:01:30.104" endtime="20211205 20:01:30.195"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=last-name</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:30.195" level="INFO">Typing text 'A' into text field 'id=last-name'.</msg>
+<status status="PASS" starttime="20211205 20:01:30.195" endtime="20211205 20:01:30.273"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=postal-code</arg>
+<arg>${POSTALCODE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:30.273" level="INFO">Typing text '12345' into text field 'id=postal-code'.</msg>
+<status status="PASS" starttime="20211205 20:01:30.273" endtime="20211205 20:01:30.357"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=continue</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:30.358" level="INFO">Clicking element 'id=continue'.</msg>
+<status status="PASS" starttime="20211205 20:01:30.358" endtime="20211205 20:01:30.424"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:31.437" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:30.424" endtime="20211205 20:01:31.437"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:31.573" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-52.png"&gt;&lt;img src="selenium-screenshot-52.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:31.437" endtime="20211205 20:01:31.574"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=finish</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:31.574" level="INFO">Clicking element 'id=finish'.</msg>
+<status status="PASS" starttime="20211205 20:01:31.574" endtime="20211205 20:01:31.623"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:32.623" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:31.623" endtime="20211205 20:01:32.624"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:32.766" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-53.png"&gt;&lt;img src="selenium-screenshot-53.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:32.624" endtime="20211205 20:01:32.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=back-to-products</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:32.767" level="INFO">Clicking element 'id=back-to-products'.</msg>
+<status status="PASS" starttime="20211205 20:01:32.767" endtime="20211205 20:01:32.817"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:33.825" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:32.818" endtime="20211205 20:01:33.826"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211205 20:01:34.018" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-54.png"&gt;&lt;img src="selenium-screenshot-54.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211205 20:01:33.826" endtime="20211205 20:01:34.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=react-burger-menu-btn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:34.019" level="INFO">Clicking element 'id=react-burger-menu-btn'.</msg>
+<status status="PASS" starttime="20211205 20:01:34.018" endtime="20211205 20:01:34.062"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:35.071" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:34.063" endtime="20211205 20:01:35.071"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211205 20:01:35.072" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<status status="PASS" starttime="20211205 20:01:35.072" endtime="20211205 20:01:35.117"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211205 20:01:36.131" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211205 20:01:35.117" endtime="20211205 20:01:36.131"/>
+</kw>
+<status status="PASS" starttime="20211205 20:01:18.827" endtime="20211205 20:01:36.131"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211205 20:01:36.132" endtime="20211205 20:01:38.332"/>
+</kw>
+<status status="PASS" starttime="20211205 20:01:16.351" endtime="20211205 20:01:38.333"/>
+</test>
+<status status="PASS" starttime="20211205 20:01:16.108" endtime="20211205 20:01:38.337"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Continue Shopping Step">Continue Shopping Step</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
