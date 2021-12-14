@@ -4,7 +4,7 @@
 
 Halo, Mutiara Intania disini ^^ 
 
-Jika ingin terhubung dengan saya, bisa kunjungi [linkedin](www.linkedin.com/in/mutiara-intania-650a59174) saya yaa :)
+Jika ingin terhubung dengan saya, bisa kunjungi [linkedin](https://www.linkedin.com/in/mutiara-intania-650a59174) saya yaa :)
 
 
 Pada halaman ini saya akan memberikan ringkasan mengenai hasil belajar tes otomasi menggunakan robot framework. 
