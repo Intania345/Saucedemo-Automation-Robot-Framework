@@ -35,7 +35,7 @@ Dan web yang akan dites adalah web [saucedemo](https://www.saucedemo.com/).
 
    <img width="234" alt="2021-12-14 (13)" src="https://user-images.githubusercontent.com/36466321/146024686-1df918cc-3c91-4665-98b3-bba66b3b80d0.png">
 
-5. Kemudian, buat folder di dalam folder utama dengan nama Resource.
+5. Kemudian, buat folder di dalam folder utama dengan nama Resource dan folder dengan nama Step.
 6. Pada folder Resource, buat file baru untuk menyimpan locator dengan ekstensi file *.yaml
 7. Lalu ketikkan code berikut pada file tersebut.
    ```
