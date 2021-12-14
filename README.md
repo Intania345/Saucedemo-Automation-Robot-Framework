@@ -22,9 +22,9 @@ Dan web yang akan dites adalah web [saucedemo](https://www.saucedemo.com/).
 
 #### Berikut saya lampirkan ringkasan untuk salah satu case yaitu case login dengan negative case sederhana:
 
-1. Pastikan tools telah terpasang di OS yang akan digunakan
-2. Buat folder terlebih dahulu untuk penyimpanan source codenya
-3. Kemudian, buka Visual Studio Code. Pilih File > Open Folder. Pilih folder yang telah dibuat sebelumnya, kemudian pilih Select Folder
+1. Pastikan tools telah terpasang di OS yang akan digunakan.
+2. Buat folder terlebih dahulu untuk penyimpanan source codenya.
+3. Kemudian, buka Visual Studio Code. Pilih File > Open Folder. Pilih folder yang telah dibuat sebelumnya, kemudian pilih Select Folder.
 
    <img width="234" alt="2021-12-14 (10)" src="https://user-images.githubusercontent.com/36466321/146021354-f7c31f62-1215-405d-9b70-334790c53781.png">
    
@@ -37,14 +37,14 @@ Dan web yang akan dites adalah web [saucedemo](https://www.saucedemo.com/).
 
 5. Kemudian, buat folder di dalam folder utama dengan nama Resource.
 6. Pada folder Resource, buat file baru untuk menyimpan locator dengan ekstensi file *.yaml
-7. Lalu ketikkan code berikut pada file tersebut
+7. Lalu ketikkan code berikut pada file tersebut.
    ```
    txtUsername : user-name
    txtPassword : password
    btnLogin : login-button
    ```
  8. Lalu buat satu file lagi di folder Resource dengan ekstensi file *.robot
- 9. Dan ketikkan code berikut pada file tersebut
+ 9. Dan ketikkan code berikut pada file tersebut.
     ```
     *** Settings ***
     Library                    SeleniumLibrary
@@ -93,15 +93,15 @@ Dan web yang akan dites adalah web [saucedemo](https://www.saucedemo.com/).
     *** Test Cases ***
     Login with invalid credentials should failed with CSV file      ${username}     ${password}
     ```
-12. Dan yang terakhir adalah dengan menjalankan code yang telah dibuat melalui terminal. Dan pastikan telah berada di direktori tempat menyimpan file pada folder Step
+12. Dan yang terakhir adalah dengan menjalankan code yang telah dibuat melalui terminal. Dan pastikan telah berada di direktori tempat menyimpan file pada folder Step.
 
     <img width="960" alt="2021-12-14 (15)" src="https://user-images.githubusercontent.com/36466321/146028926-7c7f2f2e-4b6a-41ea-be3c-49fb05f486b3.png">
     
-13. Lalu ketikkan "robot [namafile.robot]" pada terminal dan tekan enter
+13. Lalu ketikkan "robot [namafile.robot]" pada terminal dan tekan enter.
     
     <img width="960" alt="2021-12-14 (16)" src="https://user-images.githubusercontent.com/36466321/146029240-353bce0d-9334-47c9-8e62-f1bdf8c96304.png">
     
-14. Setelah running file tersebut, chromedriver akan terbuka dan mulai untuk melakukan otomasi sesuai dengan test case yang telah dibuat
+14. Setelah running file tersebut, chromedriver akan terbuka dan mulai untuk melakukan otomasi sesuai dengan test case yang telah dibuat.
 
     <img width="778" alt="2021-12-14 (17)" src="https://user-images.githubusercontent.com/36466321/146029740-fb5e52c6-8bb4-48ff-939e-4551dcb4474f.png">
     
@@ -109,9 +109,12 @@ Dan web yang akan dites adalah web [saucedemo](https://www.saucedemo.com/).
     
     <img width="960" alt="2021-12-14 (18)" src="https://user-images.githubusercontent.com/36466321/146030207-4c409423-00f5-41a6-856e-2a6a16b36738.png">
     
+ 16. Kemudian, selesai.
+ 17. Koreksi. Tidak pernah ada kata selesai untuk belajar. Jadi, saya akan eksplor terus tentang pembelajaran tes otomasi dan kalian yang membaca juga jangan sampai berhenti disini yaa :D
+ 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Lisence
+### Lisence
    Free for learning.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
